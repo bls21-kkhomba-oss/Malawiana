@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore — Malawiana</title>
+  <meta name="description" content="Search Malawi by region, kind of place, and name.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="top">
+    <a class="brand" href="index.html">Malawiana</a>
+    <nav>
+      <a href="explore.html">Explore</a>
+      <a href="regions/index.html">Regions</a>
+      <a href="journal/index.html">Journal</a>
+      <a href="culture.html">Culture</a>
+      <a href="events.html">Events</a>
+      <a href="plan.html">My trip</a>
+    </nav>
+  </header>
+  <div id="content">
+  <main class="wrap">
+    <p class="kicker">Directory</p>
+    <h1>Explore</h1>
+    <p class="lede">Thirty-three places across the country. Nothing here is a booking.</p>
+    <form id="filters" class="filters">
+      <input name="q" placeholder="Name or district" aria-label="Search">
+      <select name="region" aria-label="Region"><option value="">All regions</option><option value="northern">Northern</option><option value="central">Central</option><option value="southern">Southern</option></select>
+      <select name="category" aria-label="Category"><option value="">All kinds</option><option value="attraction">Attractions</option><option value="stay">Hotels and lodges</option><option value="food">Restaurants</option><option value="experience">Things to do</option><option value="culture">Culture</option></select>
+    </form>
+    <div class="split">
+      <div id="map" class="map" role="region" aria-label="Map of places"></div>
+      <div id="results" class="stack"></div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script></div>
+  <footer class="foot">
+    <p>An independent guide. Not the Malawi Department of Tourism. Confirm fees, hours, and roads before you travel.</p>
+    <p><a href="legal.html">Editor, privacy, and the law</a> · Hosted on GitHub Pages · Photos credited on each picture</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
