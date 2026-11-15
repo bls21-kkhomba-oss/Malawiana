@@ -3,68 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Malawiana — Discover the warm heart of Africa</title>
-  <meta name="description" content="An independent guide to Malawi’s parks, lake, lodges, food, and culture.">
+  <meta name="theme-color" content="#123b36">
+  <meta name="description" content="Discover Malawi: national parks, Lake Malawi, mountains, culture and places to stay.">
+  <title>Malawiana — Discover the Warm Heart of Africa</title>
   <link rel="stylesheet" href="styles.css">
-  
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="top">
-    <a class="brand" href="index.html">Malawiana</a>
-    <nav>
-      <a href="explore.html">Explore</a>
-      <a href="regions/index.html">Regions</a>
-      <a href="journal/index.html">Journal</a>
-      <a href="culture.html">Culture</a>
-      <a href="events.html">Events</a>
-      <a href="plan.html">My trip</a>
+    <a class="brand" href="index.html">Malawiana<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#discover">Discover</a><a href="#regions">Regions</a><a href="#gallery">Photo gallery</a>
     </nav>
   </header>
-  <div id="content">
-  <section class="hero">
-    <figure class="shot">
-    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monoxylon_beach_Lake_Malawi_1557.jpg?width=1600" alt="Dugout canoes on a sandy beach of Lake Malawi" loading="lazy">
-    <figcaption>Stefan Kraft · CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:Monoxylon_beach_Lake_Malawi_1557.jpg">Source</a> · A lake beach. Not a photograph of every place in this guide.</figcaption>
-  </figure>
-    <div class="hero-card">
-      <p class="kicker">The warm heart of Africa</p>
-      <h1>Explore Malawi. Experience more.</h1>
-      <p>Parks, the lake, places to sleep, and the food in between — across all three regions.</p>
-      <form class="search" action="explore.html">
-        <label class="sr" for="q">Search places</label>
-        <input id="q" name="q" placeholder="Try Mulanje, chambo, Nyika">
-        <button type="submit">Search</button>
-      </form>
-    </div>
-  </section>
-  <section class="wrap facts">
-    <p><strong>3 regions</strong> North, centre, and south, including Likoma out in the lake.</p>
-    <p><strong>3,002 m</strong> Sapitwa, the summit of Mount Mulanje.</p>
-    <p><strong>Two UNESCO sites</strong> Lake Malawi National Park and the Chongoni rock paintings.</p>
-  </section>
-  <section class="wrap">
-    <h2>Start with a kind of place</h2>
-    <div class="tiles">
-      <a class="tile" href="explore.html?category=attraction"><span>Attractions</span><small>Places worth the journey</small></a><a class="tile" href="explore.html?category=stay"><span>Hotels and lodges</span><small>Where to sleep</small></a><a class="tile" href="explore.html?category=food"><span>Restaurants</span><small>Where to eat</small></a><a class="tile" href="explore.html?category=experience"><span>Things to do</span><small>Days on the water, the trail, and the estate</small></a><a class="tile" href="explore.html?category=culture"><span>Culture</span><small>Living heritage</small></a>
-    </div>
-  </section>
-  <section class="wrap">
-    <h2>The three regions</h2>
-    <div class="cards">
-      <a class="card" href="regions/northern.html"><h3>Northern Region</h3><p>High plateaus, an escarpment mission town, and the deep-water bays of the northern lake. Likoma Island belongs to this region even though it sits far out in the lake.</p></a><a class="card" href="regions/central.html"><h3>Central Region</h3><p>Lilongwe, the capital, plus the Salima lakeshore, Nkhotakota's restored woodland, and the rock-art hills of Dedza.</p></a><a class="card" href="regions/southern.html"><h3>Southern Region</h3><p>The great massif of Mulanje, the Zomba Plateau, Liwonde's elephants, Blantyre, and the Mangochi lakeshore including Cape Maclear.</p></a>
-    </div>
-  </section>
-  <section class="wrap">
-    <h2>From the journal</h2>
-    <div class="cards">
-      <a class="card" href="journal/cichlids.html"><p class="kicker">Science</p><h3>Why the fish in this lake changed biology</h3><p>Hundreds of cichlid species evolved in Lake Malawi. You can see some of them with a mask and ten minutes.</p></a><a class="card" href="journal/mulanje-cedar.html"><p class="kicker">Environment</p><h3>The tree that grows on one mountain</h3><p>The Mulanje cedar is endemic, endangered, and the reason a hike here is also a conservation story.</p></a><a class="card" href="journal/eating.html"><p class="kicker">Food</p><h3>How to eat: nsima, chambo, and the hand you use</h3><p>The staple is maize porridge. The lake’s famous fish is under pressure. The manners are simple.</p></a>
-    </div>
-  </section></div>
-  <footer class="foot">
-    <p>An independent guide. Not the Malawi Department of Tourism. Confirm fees, hours, and roads before you travel.</p>
-    <p><a href="legal.html">Editor, privacy, and the law</a> · Hosted on GitHub Pages · Photos credited on each picture</p>
-  </footer>
-  <script src="app.js"></script>
+  <main id="content">
+    <section class="hero">
+      <img class="hero-image" src="images/lake-malawi-sunset.jpg" alt="Sunset over Lake Malawi" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">The warm heart of Africa</p>
+        <h1>Explore Malawi.<br>Experience more.</h1>
+        <p>From the shores of Lake Malawi to wild national parks and mountain highlands, discover the places that make Malawi unforgettable.</p>
+        <a class="primary-link" href="#gallery">Explore the photographs <span aria-hidden="true">→</span></a>
+      </div>
+      <span class="hero-credit">Photograph: Lake Malawi</span>
+    </section>
+    <section class="intro wrap" id="discover">
+      <p class="eyebrow dark">A country of remarkable contrasts</p>
+      <h2>One beautiful destination, many ways to explore.</h2>
+      <div class="intro-grid">
+        <p>Find wildlife along the Shire River, quiet beaches and islands on the lake, highland trails, historic places and welcoming cultural experiences.</p>
+        <div class="quick-facts"><div><strong>3</strong><span>regions</span></div><div><strong>3,002 m</strong><span>Mount Mulanje</span></div><div><strong>Lake</strong><span>Malawi</span></div></div>
+      </div>
+    </section>
+    <section class="region-section" id="regions"><div class="wrap"><p class="eyebrow">Find your landscape</p><h2>Discover the regions</h2>
+      <div class="region-grid">
+        <article class="region-card"><img src="images/nyika-plateau.jpg" alt="Nyika highland landscape" loading="lazy"><div><h3>Northern Region</h3><p>High plateaus, escarpment views, deep-water bays and Likoma Island.</p></div></article>
+        <article class="region-card"><img src="images/kumbali-cultural-village.jpg" alt="Kumbali Cultural Village" loading="lazy"><div><h3>Central Region</h3><p>Lilongwe, lakeshore escapes, woodland reserves and the rock-art hills of Dedza.</p></div></article>
+        <article class="region-card"><img src="images/mount-mulanje.jpg" alt="Mount Mulanje" loading="lazy"><div><h3>Southern Region</h3><p>Mountains, tea estates, wildlife reserves, historic towns and the southern lakeshore.</p></div></article>
+      </div>
+    </div></section>
+    <section class="wrap gallery-section" id="gallery"><div class="gallery-heading"><div><p class="eyebrow dark">See Malawi</p><h2>Places worth remembering</h2></div><p>Photographs from the collection supplied for this website.</p></div>
+      <div class="photo-grid" id="photo-gallery" aria-live="polite"><p>Loading photographs…</p></div>
+    </section>
+  </main>
+  <footer class="foot"><div class="wrap"><a class="brand" href="index.html">Malawiana<span>.</span></a><p>An independent guide to Malawi. Confirm fees, opening hours and road conditions before travelling.</p><p class="small">Photos are stored locally in this website repository. Hosted with GitHub Pages.</p></div></footer>
+  <script src="app.js" defer></script>
 </body>
 </html>

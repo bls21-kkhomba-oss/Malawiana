@@ -44,3 +44,17 @@ if (results && window.L) {
   form.addEventListener("input", draw);
   draw();
 }
+
+
+// Local photographs bundled with this repository (relative paths work on GitHub Pages).
+const MALAWIANA_PHOTOS = [{"file":"images/liwonde-hippo.jpeg","alt":"A hippo in Liwonde National Park","place":"Liwonde National Park"},{"file":"images/sunbird-livingstonia-beach.webp","alt":"Sunbird Livingstonia Beach","place":"Senga Bay"},{"file":"images/lake-malawi-sunset.jpg","alt":"Sunset over Lake Malawi","place":"Lake Malawi"},{"file":"images/chongoni-rock-art-area.jpg","alt":"Chongoni Rock Art Area","place":"Dedza"},{"file":"images/sunbird-livingstonia-sign.webp","alt":"Sunbird Livingstonia Beach sign","place":"Senga Bay"},{"file":"images/kumbali-cultural-village.jpg","alt":"Kumbali Cultural Village","place":"Lilongwe"},{"file":"images/nyika-plateau.jpg","alt":"Open landscapes of Nyika Plateau","place":"Nyika National Park"},{"file":"images/liwonde-lion.jpg","alt":"Wildlife in Liwonde","place":"Liwonde National Park"},{"file":"images/likoma-island-aerial.jpg","alt":"Aerial view of Likoma Island","place":"Likoma Island"},{"file":"images/mount-mulanje.jpg","alt":"Mount Mulanje above the tea country","place":"Mulanje"},{"file":"images/kumbali-lodge.jpg","alt":"Lodge grounds at Kumbali","place":"Lilongwe"},{"file":"images/liwonde-boat-safari.jpg","alt":"Boat safari on the Shire River","place":"Liwonde National Park"},{"file":"images/majete-lodge.jpg","alt":"Lodge veranda in Majete","place":"Majete Wildlife Reserve"},{"file":"images/majete-wildlife.jpg","alt":"Wildlife at Majete","place":"Majete Wildlife Reserve"},{"file":"images/likoma-lakeshore.jpg","alt":"The shoreline at Likoma","place":"Likoma Island"},{"file":"images/vwaza-marsh-landscape.jpeg","alt":"Woodland and water at Vwaza Marsh","place":"Vwaza Marsh"},{"file":"images/zomba-plateau.jpg","alt":"Mountain scenery at Zomba","place":"Zomba Plateau"},{"file":"images/likoma-island-shore.jpg","alt":"Likoma Island from above","place":"Likoma Island"},{"file":"images/chongoni-rock-shelter.jpg","alt":"Rock shelter at Chongoni","place":"Dedza"},{"file":"images/shire-river-boat.jpg","alt":"A boat on the Shire River","place":"Shire River"},{"file":"images/lake-malawi-snorkelling.jpeg","alt":"Clear water at Lake Malawi","place":"Lake Malawi National Park"},{"file":"images/lake-malawi-kayaks.jpeg","alt":"Kayaking on Lake Malawi","place":"Lake Malawi National Park"},{"file":"images/chelinda-lodge.jpg","alt":"Chelinda Lodge on the Nyika Plateau","place":"Nyika National Park"},{"file":"images/liwonde-elephants.jpeg","alt":"Elephants on a river safari","place":"Liwonde National Park"},{"file":"images/vwaza-elephants.jpg","alt":"Elephants at Vwaza Marsh","place":"Vwaza Marsh"},{"file":"images/likoma-rocks.jpg","alt":"Rocky shoreline on Likoma Island","place":"Likoma Island"},{"file":"images/vwaza-marsh-wildlife.jpeg","alt":"Wildlife near the water at Vwaza","place":"Vwaza Marsh"},{"file":"images/nyika-highlands.jpg","alt":"Rolling highlands of Nyika","place":"Nyika National Park"},{"file":"images/majete-wildlife-reserve.jpeg","alt":"Wildlife at Majete","place":"Majete Wildlife Reserve"}];
+
+const photoGallery = document.querySelector("#photo-gallery");
+if (photoGallery) {
+  photoGallery.innerHTML = MALAWIANA_PHOTOS.map((photo) => `
+    <figure class="photo-card">
+      <img src="${photo.file}" alt="${photo.alt}" loading="lazy" decoding="async">
+      <figcaption><strong>${photo.place}</strong><span>${photo.alt}</span></figcaption>
+    </figure>
+  `).join("");
+}
